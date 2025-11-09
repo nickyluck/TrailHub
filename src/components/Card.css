@@ -65,6 +65,41 @@
   max-width: 200px;
 }
 
+.distance-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.distance-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.distance-btn {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex: 1;
+  min-width: 100px;
+}
+
+.distance-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.distance-btn:active {
+  transform: translateY(0);
+}
+
 .number-input:focus {
   outline: none;
   border-color: #667eea;

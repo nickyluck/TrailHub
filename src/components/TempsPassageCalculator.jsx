@@ -22,14 +22,34 @@ function TempsPassageCalculator() {
       <div className="calculator-section">
         <div className="input-group">
           <label>Distance (km)</label>
-          <input
-            type="number"
-            min="0"
-            step="0.1"
-            value={distance}
-            onChange={(e) => setDistance(parseFloat(e.target.value) || 0)}
-            className="number-input large"
-          />
+          <div className="distance-input-container">
+            <input
+              type="number"
+              min="0"
+              step="0.1"
+              value={distance}
+              onChange={(e) => setDistance(parseFloat(e.target.value) || 0)}
+              className="number-input large"
+            />
+            <div className="distance-buttons">
+              <button
+                type="button"
+                onClick={() => setDistance(21.0975)}
+                className="distance-btn"
+                title="Semi-marathon (21.0975 km)"
+              >
+                Semi
+              </button>
+              <button
+                type="button"
+                onClick={() => setDistance(42.195)}
+                className="distance-btn"
+                title="Marathon (42.195 km)"
+              >
+                Marathon
+              </button>
+            </div>
+          </div>
         </div>
 
         <div className="input-group">
