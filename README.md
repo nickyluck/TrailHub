@@ -19,17 +19,6 @@ Application React pour réaliser facilement différents calculs concernant la co
 npm install
 ```
 
-### ⚠️ Important : Projet dans Dropbox
-
-Si ce projet est synchronisé avec Dropbox, **excluez le dossier `node_modules` de la synchronisation** pour éviter les erreurs `EBUSY` :
-
-1. Ouvrez l'application Dropbox
-2. Allez dans **Paramètres** → **Synchronisation** → **Sélectivité**
-3. Cliquez sur **Choisir les dossiers** pour ce projet
-4. **Décochez** le dossier `node_modules`
-
-**Pourquoi ?** Dropbox verrouille les fichiers pendant la synchronisation, ce qui cause des erreurs lors de l'installation des dépendances et du fonctionnement de Vite.
-
 ## Développement
 
 ```bash

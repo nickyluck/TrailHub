@@ -11,7 +11,7 @@ function App() {
       <div className="app">
         <header className="app-header">
           <h1>🏃 TrailHub</h1>
-          <p>Calculs pour la course à pied et le trail</p>
+          <p>Calculs pour la course à pied</p>
         </header>
         
         <main className="app-main">
